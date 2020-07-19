@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AA3653224C4A39B001C188B /* ZKRichTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3653124C4A39B001C188B /* ZKRichTextCell.m */; };
+		7AA3653824C4A3EE001C188B /* ZKRichTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3653724C4A3EE001C188B /* ZKRichTextNode.m */; };
+		7AA3653B24C4A60C001C188B /* ZKRichTextTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3653A24C4A60C001C188B /* ZKRichTextTextNode.m */; };
+		7AA3653E24C4A61C001C188B /* ZKRichTextImageNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3653D24C4A61C001C188B /* ZKRichTextImageNode.m */; };
+		7AA3654124C4A628001C188B /* ZKRichTextVideoNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3654024C4A628001C188B /* ZKRichTextVideoNode.m */; };
+		7AA3654424C4A930001C188B /* ZKRichTextHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3654324C4A930001C188B /* ZKRichTextHelper.m */; };
 		7AC1ECED24BF4D3A002867ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ECEC24BF4D3A002867ED /* AppDelegate.m */; };
-		7AC1ECF024BF4D3A002867ED /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ECEF24BF4D3A002867ED /* SceneDelegate.m */; };
 		7AC1ECF324BF4D3A002867ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ECF224BF4D3A002867ED /* ViewController.m */; };
 		7AC1ECF624BF4D3A002867ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC1ECF424BF4D3A002867ED /* Main.storyboard */; };
 		7AC1ECF824BF4D3B002867ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC1ECF724BF4D3B002867ED /* Assets.xcassets */; };
@@ -16,6 +21,17 @@
 		7AC1ECFE24BF4D3B002867ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ECFD24BF4D3B002867ED /* main.m */; };
 		7AC1ED0824BF4D3B002867ED /* ZKRichTextEditorExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ED0724BF4D3B002867ED /* ZKRichTextEditorExampleTests.m */; };
 		7AC1ED1324BF4D3B002867ED /* ZKRichTextEditorExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ED1224BF4D3B002867ED /* ZKRichTextEditorExampleUITests.m */; };
+		7AC1ED2524BF4F38002867ED /* NSObject+ZKSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ED2424BF4F38002867ED /* NSObject+ZKSwizzling.m */; };
+		7AC1ED2824BF50A1002867ED /* ZKSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ED2724BF50A1002867ED /* ZKSignal.m */; };
+		7AC1ED2C24BF50F3002867ED /* ZKObserveCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ED2B24BF50F3002867ED /* ZKObserveCenter.m */; };
+		7AC1ED2F24BF5FEB002867ED /* NSObject+ZKSending.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ED2E24BF5FEB002867ED /* NSObject+ZKSending.m */; };
+		7AC1ED3224BF6105002867ED /* ZKBindCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ED3124BF6105002867ED /* ZKBindCenter.m */; };
+		7AC1ED3824BF61F2002867ED /* ZKBindProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ED3724BF61F2002867ED /* ZKBindProxy.m */; };
+		7AC1ED3D24BF7323002867ED /* UIControl+ZKSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ED3C24BF7323002867ED /* UIControl+ZKSignal.m */; };
+		7AC1ED4324BF73B0002867ED /* UIButton+ZKSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ED4224BF73B0002867ED /* UIButton+ZKSignal.m */; };
+		7AC1ED4624BF7401002867ED /* UITextField+ZKSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ED4524BF7401002867ED /* UITextField+ZKSignal.m */; };
+		7AC1ED4924BF7465002867ED /* UIRefreshControl+ZKSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ED4824BF7465002867ED /* UIRefreshControl+ZKSignal.m */; };
+		7AC1ED4F24BF7994002867ED /* ZKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ED4E24BF7994002867ED /* ZKTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +52,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A439C7024C372FA005E8FD0 /* ZKRichTextDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextDefines.h; sourceTree = "<group>"; };
+		7AA3653024C4A39B001C188B /* ZKRichTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextCell.h; sourceTree = "<group>"; };
+		7AA3653124C4A39B001C188B /* ZKRichTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKRichTextCell.m; sourceTree = "<group>"; };
+		7AA3653624C4A3EE001C188B /* ZKRichTextNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextNode.h; sourceTree = "<group>"; };
+		7AA3653724C4A3EE001C188B /* ZKRichTextNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKRichTextNode.m; sourceTree = "<group>"; };
+		7AA3653924C4A60C001C188B /* ZKRichTextTextNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextTextNode.h; sourceTree = "<group>"; };
+		7AA3653A24C4A60C001C188B /* ZKRichTextTextNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKRichTextTextNode.m; sourceTree = "<group>"; };
+		7AA3653C24C4A61C001C188B /* ZKRichTextImageNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextImageNode.h; sourceTree = "<group>"; };
+		7AA3653D24C4A61C001C188B /* ZKRichTextImageNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKRichTextImageNode.m; sourceTree = "<group>"; };
+		7AA3653F24C4A628001C188B /* ZKRichTextVideoNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextVideoNode.h; sourceTree = "<group>"; };
+		7AA3654024C4A628001C188B /* ZKRichTextVideoNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKRichTextVideoNode.m; sourceTree = "<group>"; };
+		7AA3654224C4A930001C188B /* ZKRichTextHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextHelper.h; sourceTree = "<group>"; };
+		7AA3654324C4A930001C188B /* ZKRichTextHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKRichTextHelper.m; sourceTree = "<group>"; };
 		7AC1ECE824BF4D3A002867ED /* ZKRichTextEditorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKRichTextEditorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC1ECEB24BF4D3A002867ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7AC1ECEC24BF4D3A002867ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7AC1ECEE24BF4D3A002867ED /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		7AC1ECEF24BF4D3A002867ED /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		7AC1ECF124BF4D3A002867ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7AC1ECF224BF4D3A002867ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7AC1ECF524BF4D3A002867ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +81,31 @@
 		7AC1ED0E24BF4D3B002867ED /* ZKRichTextEditorExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKRichTextEditorExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC1ED1224BF4D3B002867ED /* ZKRichTextEditorExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKRichTextEditorExampleUITests.m; sourceTree = "<group>"; };
 		7AC1ED1424BF4D3B002867ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AC1ED2124BF4D94002867ED /* ZKBinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKBinder.h; sourceTree = "<group>"; };
+		7AC1ED2324BF4F38002867ED /* NSObject+ZKSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZKSwizzling.h"; sourceTree = "<group>"; };
+		7AC1ED2424BF4F38002867ED /* NSObject+ZKSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZKSwizzling.m"; sourceTree = "<group>"; };
+		7AC1ED2624BF50A1002867ED /* ZKSignal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKSignal.h; sourceTree = "<group>"; };
+		7AC1ED2724BF50A1002867ED /* ZKSignal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKSignal.m; sourceTree = "<group>"; };
+		7AC1ED2924BF50BF002867ED /* ZKMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKMacros.h; sourceTree = "<group>"; };
+		7AC1ED2A24BF50F3002867ED /* ZKObserveCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKObserveCenter.h; sourceTree = "<group>"; };
+		7AC1ED2B24BF50F3002867ED /* ZKObserveCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKObserveCenter.m; sourceTree = "<group>"; };
+		7AC1ED2D24BF5FEB002867ED /* NSObject+ZKSending.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZKSending.h"; sourceTree = "<group>"; };
+		7AC1ED2E24BF5FEB002867ED /* NSObject+ZKSending.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZKSending.m"; sourceTree = "<group>"; };
+		7AC1ED3024BF6105002867ED /* ZKBindCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKBindCenter.h; sourceTree = "<group>"; };
+		7AC1ED3124BF6105002867ED /* ZKBindCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKBindCenter.m; sourceTree = "<group>"; };
+		7AC1ED3624BF61F2002867ED /* ZKBindProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKBindProxy.h; sourceTree = "<group>"; };
+		7AC1ED3724BF61F2002867ED /* ZKBindProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKBindProxy.m; sourceTree = "<group>"; };
+		7AC1ED3B24BF7323002867ED /* UIControl+ZKSignal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+ZKSignal.h"; sourceTree = "<group>"; };
+		7AC1ED3C24BF7323002867ED /* UIControl+ZKSignal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ZKSignal.m"; sourceTree = "<group>"; };
+		7AC1ED4124BF73B0002867ED /* UIButton+ZKSignal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZKSignal.h"; sourceTree = "<group>"; };
+		7AC1ED4224BF73B0002867ED /* UIButton+ZKSignal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZKSignal.m"; sourceTree = "<group>"; };
+		7AC1ED4424BF7400002867ED /* UITextField+ZKSignal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+ZKSignal.h"; sourceTree = "<group>"; };
+		7AC1ED4524BF7401002867ED /* UITextField+ZKSignal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ZKSignal.m"; sourceTree = "<group>"; };
+		7AC1ED4724BF7465002867ED /* UIRefreshControl+ZKSignal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+ZKSignal.h"; sourceTree = "<group>"; };
+		7AC1ED4824BF7465002867ED /* UIRefreshControl+ZKSignal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+ZKSignal.m"; sourceTree = "<group>"; };
+		7AC1ED4C24BF7901002867ED /* ZKRichTextEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextEditor.h; sourceTree = "<group>"; };
+		7AC1ED4D24BF7994002867ED /* ZKTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKTextView.h; sourceTree = "<group>"; };
+		7AC1ED4E24BF7994002867ED /* ZKTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +133,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AA3652B24C4A09A001C188B /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				7AA3653624C4A3EE001C188B /* ZKRichTextNode.h */,
+				7AA3653724C4A3EE001C188B /* ZKRichTextNode.m */,
+				7AA3653924C4A60C001C188B /* ZKRichTextTextNode.h */,
+				7AA3653A24C4A60C001C188B /* ZKRichTextTextNode.m */,
+				7AA3653C24C4A61C001C188B /* ZKRichTextImageNode.h */,
+				7AA3653D24C4A61C001C188B /* ZKRichTextImageNode.m */,
+				7AA3653F24C4A628001C188B /* ZKRichTextVideoNode.h */,
+				7AA3654024C4A628001C188B /* ZKRichTextVideoNode.m */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		7AA3652F24C4A321001C188B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7AA3653024C4A39B001C188B /* ZKRichTextCell.h */,
+				7AA3653124C4A39B001C188B /* ZKRichTextCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		7AC1ECDF24BF4D3A002867ED = {
 			isa = PBXGroup;
 			children = (
@@ -106,10 +182,10 @@
 			children = (
 				7AC1ECEB24BF4D3A002867ED /* AppDelegate.h */,
 				7AC1ECEC24BF4D3A002867ED /* AppDelegate.m */,
-				7AC1ECEE24BF4D3A002867ED /* SceneDelegate.h */,
-				7AC1ECEF24BF4D3A002867ED /* SceneDelegate.m */,
 				7AC1ECF124BF4D3A002867ED /* ViewController.h */,
 				7AC1ECF224BF4D3A002867ED /* ViewController.m */,
+				7AC1ED2024BF4D82002867ED /* ZKBinder */,
+				7AC1ED4B24BF78D8002867ED /* ZKRichTextEditor */,
 				7AC1ECF424BF4D3A002867ED /* Main.storyboard */,
 				7AC1ECF724BF4D3B002867ED /* Assets.xcassets */,
 				7AC1ECF924BF4D3B002867ED /* LaunchScreen.storyboard */,
@@ -135,6 +211,82 @@
 				7AC1ED1424BF4D3B002867ED /* Info.plist */,
 			);
 			path = ZKRichTextEditorExampleUITests;
+			sourceTree = "<group>";
+		};
+		7AC1ED2024BF4D82002867ED /* ZKBinder */ = {
+			isa = PBXGroup;
+			children = (
+				7AC1ED2124BF4D94002867ED /* ZKBinder.h */,
+				7AC1ED3924BF72E6002867ED /* Core */,
+				7AC1ED3A24BF72FD002867ED /* Support */,
+			);
+			path = ZKBinder;
+			sourceTree = "<group>";
+		};
+		7AC1ED3924BF72E6002867ED /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7AC1ED2624BF50A1002867ED /* ZKSignal.h */,
+				7AC1ED2724BF50A1002867ED /* ZKSignal.m */,
+				7AC1ED2924BF50BF002867ED /* ZKMacros.h */,
+				7AC1ED3624BF61F2002867ED /* ZKBindProxy.h */,
+				7AC1ED3724BF61F2002867ED /* ZKBindProxy.m */,
+				7AC1ED3024BF6105002867ED /* ZKBindCenter.h */,
+				7AC1ED3124BF6105002867ED /* ZKBindCenter.m */,
+				7AC1ED2A24BF50F3002867ED /* ZKObserveCenter.h */,
+				7AC1ED2B24BF50F3002867ED /* ZKObserveCenter.m */,
+				7AC1ED2D24BF5FEB002867ED /* NSObject+ZKSending.h */,
+				7AC1ED2E24BF5FEB002867ED /* NSObject+ZKSending.m */,
+				7AC1ED2324BF4F38002867ED /* NSObject+ZKSwizzling.h */,
+				7AC1ED2424BF4F38002867ED /* NSObject+ZKSwizzling.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7AC1ED3A24BF72FD002867ED /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				7AC1ED3B24BF7323002867ED /* UIControl+ZKSignal.h */,
+				7AC1ED3C24BF7323002867ED /* UIControl+ZKSignal.m */,
+				7AC1ED4124BF73B0002867ED /* UIButton+ZKSignal.h */,
+				7AC1ED4224BF73B0002867ED /* UIButton+ZKSignal.m */,
+				7AC1ED4424BF7400002867ED /* UITextField+ZKSignal.h */,
+				7AC1ED4524BF7401002867ED /* UITextField+ZKSignal.m */,
+				7AC1ED4724BF7465002867ED /* UIRefreshControl+ZKSignal.h */,
+				7AC1ED4824BF7465002867ED /* UIRefreshControl+ZKSignal.m */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		7AC1ED4B24BF78D8002867ED /* ZKRichTextEditor */ = {
+			isa = PBXGroup;
+			children = (
+				7AC1ED4C24BF7901002867ED /* ZKRichTextEditor.h */,
+				7AA3652F24C4A321001C188B /* Cell */,
+				7AA3652B24C4A09A001C188B /* Node */,
+				7AEA2E3924C381DB00383BE4 /* Utils */,
+				7AEA2E3824C381C700383BE4 /* InputView */,
+			);
+			path = ZKRichTextEditor;
+			sourceTree = "<group>";
+		};
+		7AEA2E3824C381C700383BE4 /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				7AC1ED4D24BF7994002867ED /* ZKTextView.h */,
+				7AC1ED4E24BF7994002867ED /* ZKTextView.m */,
+			);
+			path = InputView;
+			sourceTree = "<group>";
+		};
+		7AEA2E3924C381DB00383BE4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7AA3654224C4A930001C188B /* ZKRichTextHelper.h */,
+				7AA3654324C4A930001C188B /* ZKRichTextHelper.m */,
+				7A439C7024C372FA005E8FD0 /* ZKRichTextDefines.h */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,10 +419,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AC1ED4F24BF7994002867ED /* ZKTextView.m in Sources */,
+				7AA3654424C4A930001C188B /* ZKRichTextHelper.m in Sources */,
+				7AA3653824C4A3EE001C188B /* ZKRichTextNode.m in Sources */,
 				7AC1ECF324BF4D3A002867ED /* ViewController.m in Sources */,
+				7AC1ED2F24BF5FEB002867ED /* NSObject+ZKSending.m in Sources */,
+				7AC1ED2C24BF50F3002867ED /* ZKObserveCenter.m in Sources */,
+				7AA3654124C4A628001C188B /* ZKRichTextVideoNode.m in Sources */,
+				7AC1ED3824BF61F2002867ED /* ZKBindProxy.m in Sources */,
+				7AC1ED4324BF73B0002867ED /* UIButton+ZKSignal.m in Sources */,
+				7AA3653E24C4A61C001C188B /* ZKRichTextImageNode.m in Sources */,
 				7AC1ECED24BF4D3A002867ED /* AppDelegate.m in Sources */,
+				7AC1ED3224BF6105002867ED /* ZKBindCenter.m in Sources */,
+				7AA3653B24C4A60C001C188B /* ZKRichTextTextNode.m in Sources */,
+				7AC1ED3D24BF7323002867ED /* UIControl+ZKSignal.m in Sources */,
+				7AC1ED2524BF4F38002867ED /* NSObject+ZKSwizzling.m in Sources */,
+				7AC1ED2824BF50A1002867ED /* ZKSignal.m in Sources */,
+				7AA3653224C4A39B001C188B /* ZKRichTextCell.m in Sources */,
+				7AC1ED4624BF7401002867ED /* UITextField+ZKSignal.m in Sources */,
+				7AC1ED4924BF7465002867ED /* UIRefreshControl+ZKSignal.m in Sources */,
 				7AC1ECFE24BF4D3B002867ED /* main.m in Sources */,
-				7AC1ECF024BF4D3A002867ED /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +608,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = ZKRichTextEditorExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,7 +616,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bestdew.ZKRichTextEditorExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -456,6 +625,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = ZKRichTextEditorExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -463,7 +633,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bestdew.ZKRichTextEditorExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
