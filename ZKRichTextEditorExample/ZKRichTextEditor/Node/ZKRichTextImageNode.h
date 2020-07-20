@@ -12,6 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZKRichTextImageNode : ZKRichTextNode
 
+@property (nullable, nonatomic, strong) UIImage *image;
+@property (nullable, nonatomic, copy) NSString *imageURL;
+
+@property (nonatomic, assign) CGRect imageRect;
+
+- (instancetype)initWithImage:(nullable UIImage *)image NS_DESIGNATED_INITIALIZER;
+
 @end
 
 NS_ASSUME_NONNULL_END

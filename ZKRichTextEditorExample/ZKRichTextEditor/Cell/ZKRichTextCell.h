@@ -7,11 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZKTextView.h"
 #import "ZKRichTextNode.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZKRichTextCell : UITableViewCell
+
+@property (nullable, nonatomic, strong) ZKRichTextNode *node;
+@property (nonatomic, readonly, strong) ZKTextView *textView;
+
+- (void)setup NS_REQUIRES_SUPER; 
+
+- (void)beginActive;
+- (void)endActive;
 
 @end
 

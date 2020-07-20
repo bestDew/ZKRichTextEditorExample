@@ -10,4 +10,8 @@
 
 @implementation ZKRichTextVideoNode
 
+- (NSString *)type {
+    return ZKRichTextVideoKey;
+}
+
 @end

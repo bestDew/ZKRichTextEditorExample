@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A9C86FE24C5917D0066C229 /* UITableView+ZKUpdates.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9C86FD24C5917D0066C229 /* UITableView+ZKUpdates.m */; };
 		7AA3653224C4A39B001C188B /* ZKRichTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3653124C4A39B001C188B /* ZKRichTextCell.m */; };
 		7AA3653824C4A3EE001C188B /* ZKRichTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3653724C4A3EE001C188B /* ZKRichTextNode.m */; };
 		7AA3653B24C4A60C001C188B /* ZKRichTextTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3653A24C4A60C001C188B /* ZKRichTextTextNode.m */; };
@@ -53,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		7A439C7024C372FA005E8FD0 /* ZKRichTextDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextDefines.h; sourceTree = "<group>"; };
+		7A9C86FC24C5917D0066C229 /* UITableView+ZKUpdates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+ZKUpdates.h"; sourceTree = "<group>"; };
+		7A9C86FD24C5917D0066C229 /* UITableView+ZKUpdates.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ZKUpdates.m"; sourceTree = "<group>"; };
 		7AA3653024C4A39B001C188B /* ZKRichTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextCell.h; sourceTree = "<group>"; };
 		7AA3653124C4A39B001C188B /* ZKRichTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKRichTextCell.m; sourceTree = "<group>"; };
 		7AA3653624C4A3EE001C188B /* ZKRichTextNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextNode.h; sourceTree = "<group>"; };
@@ -285,6 +288,8 @@
 				7AA3654224C4A930001C188B /* ZKRichTextHelper.h */,
 				7AA3654324C4A930001C188B /* ZKRichTextHelper.m */,
 				7A439C7024C372FA005E8FD0 /* ZKRichTextDefines.h */,
+				7A9C86FC24C5917D0066C229 /* UITableView+ZKUpdates.h */,
+				7A9C86FD24C5917D0066C229 /* UITableView+ZKUpdates.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -424,6 +429,7 @@
 				7AA3653824C4A3EE001C188B /* ZKRichTextNode.m in Sources */,
 				7AC1ECF324BF4D3A002867ED /* ViewController.m in Sources */,
 				7AC1ED2F24BF5FEB002867ED /* NSObject+ZKSending.m in Sources */,
+				7A9C86FE24C5917D0066C229 /* UITableView+ZKUpdates.m in Sources */,
 				7AC1ED2C24BF50F3002867ED /* ZKObserveCenter.m in Sources */,
 				7AA3654124C4A628001C188B /* ZKRichTextVideoNode.m in Sources */,
 				7AC1ED3824BF61F2002867ED /* ZKBindProxy.m in Sources */,

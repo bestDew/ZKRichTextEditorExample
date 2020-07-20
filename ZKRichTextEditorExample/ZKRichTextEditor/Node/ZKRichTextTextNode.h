@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSString *text;
 @property (nullable, nonatomic, copy) NSString *placeholder;
 
+@property (nonatomic, assign) CGFloat textHeight;
 @property (nonatomic, assign) NSRange selectedRange;
 
 - (instancetype)initWithText:(nullable NSString *)text NS_DESIGNATED_INITIALIZER;

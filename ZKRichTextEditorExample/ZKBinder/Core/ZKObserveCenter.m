@@ -168,8 +168,8 @@
 }
 
 - (void)unobserveAll {
-    pthread_mutex_lock(&_lock);
     id object;
+    pthread_mutex_lock(&_lock);
     NSEnumerator *enumerator = [_map keyEnumerator];
     while (object = [enumerator nextObject]) {
         NSHashTable *table = [_map objectForKey:object];

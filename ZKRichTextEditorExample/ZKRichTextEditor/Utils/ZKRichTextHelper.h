@@ -12,7 +12,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZKRichTextHelper : NSObject
 
-+ (CGFloat)precomputeTextHeight:(nullable NSString *)text;
+/// 计算 textView 中文本高度
+/// @param text 要计算高度的文本
+/// @param font 文本字体
+/// @param width textView 宽度
++ (CGFloat)heightForText:(nullable NSString *)text
+                   font:(UIFont *)font
+              fixedWidth:(CGFloat)width;
+
+/// 计算固定宽度下图片的大小
+/// @param image 要计算大小的图片
+/// @param width 图片宽度
++ (CGRect)rectForImage:(nullable UIImage *)image fixedWidth:(CGFloat)width;
 
 @end
 
