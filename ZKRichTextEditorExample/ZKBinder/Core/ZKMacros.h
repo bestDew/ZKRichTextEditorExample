@@ -15,10 +15,13 @@
 #define ZKReceive(OBJECT, KEYPATH, NILVALUE) \
     [[ZKBindProxy alloc] initWithObject:OBJECT nilValue:NILVALUE][KeyPath(OBJECT, KEYPATH)]
 
-#define KeyPath(OBJECT, KEYPATH) \
-    @(((void)(NO && ((void)(OBJECT.KEYPATH), NO)), #KEYPATH))
+#define ZKIvarKVOSet(ivar, value) ({ \
+    NSString *key = ZKGetIvarName(ivar); \
+    [self willChangeValueForKey:key]; \
+    ivar = value; \
+    [self didChangeValueForKey:key]; }) \
 
-#define GetIvarName(ivar) \
+#define ZKGetIvarName(ivar) \
     @(((void)(NO && ((void)ivar, NO)), \
     ({ const char *str = strchr(#ivar, '_'); (str ? (str + 1) : #ivar); })))
 
@@ -28,7 +31,10 @@
 #define _Strongify(obj) \
     __strong __typeof__(obj##_weak_) obj = obj##_weak_;
 
+#define KeyPath(OBJECT, KEYPATH) \
+    @(((void)(NO && ((void)(OBJECT.KEYPATH), NO)), #KEYPATH))
+
 #define NullSafe(value) \
-    [value isKindOfClass:[NSNull class]] ? nil : value
+    (value == NULL || [value isKindOfClass:[NSNull class]]) ? nil : value
 
 #endif /* ZKMacros_h */

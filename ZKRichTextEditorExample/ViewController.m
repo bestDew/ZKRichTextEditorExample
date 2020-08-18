@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZKBinder.h"
 #import "ZKRichTextEditor.h"
 
 @interface ViewController () <ZKTextViewDelegate>
@@ -24,7 +25,7 @@
     textView.delegate = self;
     textView.font = [UIFont systemFontOfSize:17.f];
     textView.placeholder = @"请输入文字";
-//    textView.maximumTextLength = 10;
+    textView.maximumTextLength = 50;
     textView.layer.borderWidth = 1.f;
     textView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     [self.view addSubview:textView];

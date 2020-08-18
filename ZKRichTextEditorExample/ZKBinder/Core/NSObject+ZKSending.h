@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param keyPath 被观察的 keyPath
 - (nullable ZKSignal *)signalForKeyPath:(NSString *)keyPath;
 
-/// 解除对 keyPath 的观察，当前 keyPath下 不再发送信号
+/// 解除对 keyPath 的观察，当前 keyPath下不再发送信号
 - (void)disabledSignalForKeyPath:(NSString *)keyPath;
 
 /// 解除对当前对象所有的观察，该对象不再发送任何信号

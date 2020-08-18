@@ -17,7 +17,7 @@
 
 static CGFloat const ZKDefaultContentHeight = 36.f;
 
-static NSString * const ZKRichTextTextKey = @"ZKRichTextTextKey";
+static NSString * const ZKRichTextTextKey  = @"ZKRichTextTextKey";
 static NSString * const ZKRichTextImageKey = @"ZKRichTextImageKey";
 static NSString * const ZKRichTextVideoKey = @"ZKRichTextVideoKey";
 

@@ -74,7 +74,7 @@
 }
 
 - (ZKSignal *)observe:(id)object keyPath:(NSString *)keyPath {
-    NSAssert(keyPath.length != 0, @"observe missing required parameters object:%@ keyPath:%@", object, keyPath);
+    NSAssert(keyPath.length != 0, @"Observe missing required parameters object:%@ keyPath:%@", object, keyPath);
     if (object == nil || keyPath.length == 0) {
         return nil;
     }
@@ -105,7 +105,7 @@
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
-    NSAssert(context, @"observe missing context keyPath:%@ object:%@ change:%@", keyPath, object, change);
+    NSAssert(context, @"Observe missing context keyPath:%@ object:%@ change:%@", keyPath, object, change);
     
     _ZKObserveInfo *info;
     {
@@ -123,7 +123,7 @@
 }
 
 - (void)unobserve:(id)object keyPath:(NSString *)keyPath {
-    NSAssert(object != nil && keyPath.length != 0, @"unobserve missing required parameters unobserve:%@ keyPath:%@", object, keyPath);
+    NSAssert(object != nil && keyPath.length != 0, @"Unobserve missing required parameters unobserve:%@ keyPath:%@", object, keyPath);
     if (object == nil || keyPath.length == 0) {
         return;
     }
@@ -147,7 +147,7 @@
 }
 
 - (void)unobserve:(id)object {
-    NSAssert(object != nil, @"unobserve missing required parameters unobserve:%@", object);
+    NSAssert(object != nil, @"Unobserve missing required parameters unobserve:%@", object);
     if (object == nil) {
         return;
     }

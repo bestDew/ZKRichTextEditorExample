@@ -38,7 +38,7 @@
 }
 
 - (void)bindReceiver:(id)receiver forSignal:(ZKSignal *)signal {
-    NSAssert(receiver != nil && signal != nil, @"bind missing required parameters receiver:%@, signal:%@", receiver, signal);
+    NSAssert(receiver != nil && signal != nil, @"Bind missing required parameters receiver:%@, signal:%@", receiver, signal);
     if (receiver == nil || signal == nil) {
         return;
     }
@@ -63,7 +63,7 @@
 }
 
 - (void)unbindReceiver:(id)receiver forSignal:(ZKSignal *)signal {
-    NSAssert(receiver != nil && signal != nil, @"unbind missing required parameters receiver:%@, signal:%@", receiver, signal);
+    NSAssert(receiver != nil && signal != nil, @"Unbind missing required parameters receiver:%@, signal:%@", receiver, signal);
     if (receiver == nil || signal == nil) {
         return;
     }
@@ -91,7 +91,7 @@
 }
 
 - (void)unbindReceiversForSignal:(ZKSignal *)signal {
-    NSAssert(signal != nil, @"unbind missing required parameters signal:%@", signal);
+    NSAssert(signal != nil, @"Unbind missing required parameters signal:%@", signal);
     if (signal == nil) {
         return;
     }
@@ -108,7 +108,7 @@
 }
 
 - (NSSet *)receiversForSignal:(ZKSignal *)signal {
-    NSAssert(signal != nil, @"get objects missing required parameters signal:%@", signal);
+    NSAssert(signal != nil, @"Get objects missing required parameters signal:%@", signal);
     if (signal == nil) {
         return nil;
     }

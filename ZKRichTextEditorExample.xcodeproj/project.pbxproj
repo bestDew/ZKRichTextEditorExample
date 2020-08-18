@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A3F1D0F24EBCE6B003E5780 /* ZKRichTextTextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F1D0E24EBCE6B003E5780 /* ZKRichTextTextModel.m */; };
+		7A3F1D1224EBCE81003E5780 /* ZKRichTextImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F1D1124EBCE81003E5780 /* ZKRichTextImageModel.m */; };
+		7A3F1D1524EBCE91003E5780 /* ZKRichTextVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F1D1424EBCE91003E5780 /* ZKRichTextVideoModel.m */; };
+		7A3F1D1E24EBD87A003E5780 /* ZKRichTextEditorConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F1D1D24EBD87A003E5780 /* ZKRichTextEditorConfiguration.m */; };
+		7A3F1D2124EBD894003E5780 /* ZKRichTextContentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F1D2024EBD894003E5780 /* ZKRichTextContentManager.m */; };
 		7A9C86FE24C5917D0066C229 /* UITableView+ZKUpdates.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9C86FD24C5917D0066C229 /* UITableView+ZKUpdates.m */; };
 		7AA3653224C4A39B001C188B /* ZKRichTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3653124C4A39B001C188B /* ZKRichTextCell.m */; };
 		7AA3653824C4A3EE001C188B /* ZKRichTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3653724C4A3EE001C188B /* ZKRichTextNode.m */; };
@@ -53,7 +58,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A3F1D0D24EBCE6B003E5780 /* ZKRichTextTextModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextTextModel.h; sourceTree = "<group>"; };
+		7A3F1D0E24EBCE6B003E5780 /* ZKRichTextTextModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKRichTextTextModel.m; sourceTree = "<group>"; };
+		7A3F1D1024EBCE81003E5780 /* ZKRichTextImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextImageModel.h; sourceTree = "<group>"; };
+		7A3F1D1124EBCE81003E5780 /* ZKRichTextImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKRichTextImageModel.m; sourceTree = "<group>"; };
+		7A3F1D1324EBCE91003E5780 /* ZKRichTextVideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextVideoModel.h; sourceTree = "<group>"; };
+		7A3F1D1424EBCE91003E5780 /* ZKRichTextVideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKRichTextVideoModel.m; sourceTree = "<group>"; };
+		7A3F1D1C24EBD87A003E5780 /* ZKRichTextEditorConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextEditorConfiguration.h; sourceTree = "<group>"; };
+		7A3F1D1D24EBD87A003E5780 /* ZKRichTextEditorConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKRichTextEditorConfiguration.m; sourceTree = "<group>"; };
+		7A3F1D1F24EBD894003E5780 /* ZKRichTextContentManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextContentManager.h; sourceTree = "<group>"; };
+		7A3F1D2024EBD894003E5780 /* ZKRichTextContentManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKRichTextContentManager.m; sourceTree = "<group>"; };
 		7A439C7024C372FA005E8FD0 /* ZKRichTextDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextDefines.h; sourceTree = "<group>"; };
+		7A64F7EE24EBC7A50023AD9E /* ZKRichTextModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextModel.h; sourceTree = "<group>"; };
 		7A9C86FC24C5917D0066C229 /* UITableView+ZKUpdates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+ZKUpdates.h"; sourceTree = "<group>"; };
 		7A9C86FD24C5917D0066C229 /* UITableView+ZKUpdates.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ZKUpdates.m"; sourceTree = "<group>"; };
 		7AA3653024C4A39B001C188B /* ZKRichTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRichTextCell.h; sourceTree = "<group>"; };
@@ -136,6 +152,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A3F1D1624EBD784003E5780 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7A3F1D1724EBD7CB003E5780 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7A3F1D1F24EBD894003E5780 /* ZKRichTextContentManager.h */,
+				7A3F1D2024EBD894003E5780 /* ZKRichTextContentManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		7A3F1D1824EBD803003E5780 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				7A3F1D1C24EBD87A003E5780 /* ZKRichTextEditorConfiguration.h */,
+				7A3F1D1D24EBD87A003E5780 /* ZKRichTextEditorConfiguration.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		7A9D115724EBC4110041C47E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A64F7EE24EBC7A50023AD9E /* ZKRichTextModel.h */,
+				7A3F1D0D24EBCE6B003E5780 /* ZKRichTextTextModel.h */,
+				7A3F1D0E24EBCE6B003E5780 /* ZKRichTextTextModel.m */,
+				7A3F1D1024EBCE81003E5780 /* ZKRichTextImageModel.h */,
+				7A3F1D1124EBCE81003E5780 /* ZKRichTextImageModel.m */,
+				7A3F1D1324EBCE91003E5780 /* ZKRichTextVideoModel.h */,
+				7A3F1D1424EBCE91003E5780 /* ZKRichTextVideoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7AA3652B24C4A09A001C188B /* Node */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,9 +320,13 @@
 			isa = PBXGroup;
 			children = (
 				7AC1ED4C24BF7901002867ED /* ZKRichTextEditor.h */,
+				7A3F1D1824EBD803003E5780 /* Configuration */,
+				7A3F1D1724EBD7CB003E5780 /* Manager */,
+				7A3F1D1624EBD784003E5780 /* Controller */,
 				7AA3652F24C4A321001C188B /* Cell */,
+				7A9D115724EBC4110041C47E /* Model */,
 				7AA3652B24C4A09A001C188B /* Node */,
-				7AEA2E3924C381DB00383BE4 /* Utils */,
+				7AEA2E3924C381DB00383BE4 /* Util */,
 				7AEA2E3824C381C700383BE4 /* InputView */,
 			);
 			path = ZKRichTextEditor;
@@ -282,7 +341,7 @@
 			path = InputView;
 			sourceTree = "<group>";
 		};
-		7AEA2E3924C381DB00383BE4 /* Utils */ = {
+		7AEA2E3924C381DB00383BE4 /* Util */ = {
 			isa = PBXGroup;
 			children = (
 				7AA3654224C4A930001C188B /* ZKRichTextHelper.h */,
@@ -291,7 +350,7 @@
 				7A9C86FC24C5917D0066C229 /* UITableView+ZKUpdates.h */,
 				7A9C86FD24C5917D0066C229 /* UITableView+ZKUpdates.m */,
 			);
-			path = Utils;
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,11 +484,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AC1ED4F24BF7994002867ED /* ZKTextView.m in Sources */,
+				7A3F1D1524EBCE91003E5780 /* ZKRichTextVideoModel.m in Sources */,
 				7AA3654424C4A930001C188B /* ZKRichTextHelper.m in Sources */,
+				7A3F1D0F24EBCE6B003E5780 /* ZKRichTextTextModel.m in Sources */,
 				7AA3653824C4A3EE001C188B /* ZKRichTextNode.m in Sources */,
 				7AC1ECF324BF4D3A002867ED /* ViewController.m in Sources */,
 				7AC1ED2F24BF5FEB002867ED /* NSObject+ZKSending.m in Sources */,
+				7A3F1D1E24EBD87A003E5780 /* ZKRichTextEditorConfiguration.m in Sources */,
 				7A9C86FE24C5917D0066C229 /* UITableView+ZKUpdates.m in Sources */,
+				7A3F1D2124EBD894003E5780 /* ZKRichTextContentManager.m in Sources */,
 				7AC1ED2C24BF50F3002867ED /* ZKObserveCenter.m in Sources */,
 				7AA3654124C4A628001C188B /* ZKRichTextVideoNode.m in Sources */,
 				7AC1ED3824BF61F2002867ED /* ZKBindProxy.m in Sources */,
@@ -442,6 +505,7 @@
 				7AC1ED2524BF4F38002867ED /* NSObject+ZKSwizzling.m in Sources */,
 				7AC1ED2824BF50A1002867ED /* ZKSignal.m in Sources */,
 				7AA3653224C4A39B001C188B /* ZKRichTextCell.m in Sources */,
+				7A3F1D1224EBCE81003E5780 /* ZKRichTextImageModel.m in Sources */,
 				7AC1ED4624BF7401002867ED /* UITextField+ZKSignal.m in Sources */,
 				7AC1ED4924BF7465002867ED /* UIRefreshControl+ZKSignal.m in Sources */,
 				7AC1ECFE24BF4D3B002867ED /* main.m in Sources */,

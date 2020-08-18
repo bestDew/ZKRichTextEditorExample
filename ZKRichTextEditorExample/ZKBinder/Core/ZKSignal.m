@@ -193,7 +193,7 @@
 }
 
 - (void)receive:(ZKReceiveBlock)block {
-    NSAssert(block != nil, @"unbind missing required parameters block:%@", block);
+    NSAssert(block != nil, @"Unbind missing required parameters block:%@", block);
     if (block == nil) {
         return;
     }
@@ -210,7 +210,7 @@
 @implementation ZKSignal (Operations)
 
 - (instancetype)filter:(ZKFilterBlock)block {
-    NSAssert(block != nil, @"filter missing required parameters block:%@", block);
+    NSAssert(block != nil, @"Filter missing required parameters block:%@", block);
     if (block) {
         _filter = [block copy];
     }
@@ -218,29 +218,31 @@
 }
 
 - (void)combine:(ZKSignal *)signal reduce:(void (^)(id _Nullable value1, id _Nullable value2))block {
-    NSAssert(signal != nil && block != nil, @"combine missing required parameters signal:%@, block:%@", signal, block);
+    NSAssert(signal != nil && block != nil, @"Combine missing required parameters signal:%@, block:%@", signal, block);
     if (block == nil) {
         return;
     }
+    
+    static NSString *kItself = @"i";
+    static NSString *kCombined = @"c";
+    
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:2];
     
-    @synchronized (self) {
-        [dict setObject:[NSNull null] forKey:@"1"];
-        [dict setObject:[NSNull null] forKey:@"2"];
-        
-        [self receive:^(id  _Nullable value) {
-            id value1 = value ?: [NSNull null];
-            id value2 = NullSafe(dict[@"2"]);
-            [dict setObject:value1 forKey:@"1"];
-            block(value1, value2);
-        }];
-        [signal receive:^(id  _Nullable value) {
-            id value1 = NullSafe(dict[@"1"]);
-            id value2 = value ?: [NSNull null];
-            [dict setObject:value2 forKey:@"2"];
-            block(value1, value2);
-        }];
-    }
+    [dict setObject:[NSNull null] forKey:kItself];
+    [dict setObject:[NSNull null] forKey:kCombined];
+    
+    [self receive:^(id  _Nullable value) {
+        id value1 = value ?: [NSNull null];
+        id value2 = NullSafe(dict[kCombined]);
+        [dict setObject:value1 forKey:kItself];
+        block(value1, value2);
+    }];
+    [signal receive:^(id  _Nullable value) {
+        id value1 = NullSafe(dict[kItself]);
+        id value2 = value ?: [NSNull null];
+        [dict setObject:value2 forKey:kCombined];
+        block(value1, value2);
+    }];
 }
 
 @end

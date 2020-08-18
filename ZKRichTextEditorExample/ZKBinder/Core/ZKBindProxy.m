@@ -8,7 +8,6 @@
 
 #import "ZKBindProxy.h"
 #import "ZKSignal.h"
-#import "ZKBindCenter.h"
 
 @interface ZKBindProxy ()
 
